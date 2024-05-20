@@ -17,6 +17,8 @@ type Produto struct {
     PrecoPor         float64 `json:"preco_por"`
 }
 
+
+
 func getDB(c *gin.Context) *gorm.DB {
     return c.MustGet("db").(*gorm.DB)
 }
